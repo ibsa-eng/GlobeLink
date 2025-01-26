@@ -16,19 +16,58 @@ const NewsletterSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0 space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Left Side - Newsletter and Social Media */}
         <div className="flex-1">
-          <h2 className="text-2xl font-bold mb-4">NEWSLETTER SIGN UP</h2>
-          <div className="flex items-center space-x-4 mb-6">
+          <h2 className="text-2xl  mb-10">NEWSLETTER SIGN UP</h2>
+          <div
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: "500",
+              fontSize: "30px",
+              lineHeight: "36px",
+              letterSpacing: "normal",
+              color: "#000000",
+            }}
+            className="flex items-center space-x-4 mb-6"
+          >
             <input
               type="email"
               placeholder="Enter your email"
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: "500",
+                fontSize: "24px",
+                lineHeight: "30px",
+                letterSpacing: "normal",
+                color: "#000000",
+              }}
               className="w-full lg:w-1/2 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
             />
-            <button className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">
+            <button
+              style={{
+                fontFamily: "Montserrat, sans-serif",
+                fontWeight: "500",
+                fontSize: "24px",
+                lineHeight: "30px",
+                letterSpacing: "normal",
+              }}
+              className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
+            >
               Submit
             </button>
           </div>
 
-          <h3 className="text-xl font-bold mb-4">Follow Us On Social Media</h3>
+          <h3
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: "500",
+              fontSize: "30px",
+              lineHeight: "36px",
+              letterSpacing: "normal",
+              color: "#000000",
+            }}
+            className="text-xl  mb-4"
+          >
+            Follow Us On Social Media
+          </h3>
           <div className="flex justify-center space-x-4 mt-4">
             {/* Facebook */}
             <a

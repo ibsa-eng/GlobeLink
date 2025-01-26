@@ -178,8 +178,30 @@ app.get("/buy", (req, res) => {
     });
   });
 });
+app.post("/chat", (req, res) => {
+  const { message } = req.body;
+
+  // Basic message-response logic
+  let reply;
+  if (message.toLowerCase().includes("dubai")) {
+    reply = "Yes, we have properties in Dubai!";
+  } else if (message.toLowerCase().includes("addis ababa")) {
+    reply = "Yes, we have properties in Addis Ababa!";
+  } else {
+    reply = "Sorry, I didn't understand. Could you please clarify?";
+  }
+
+  res.json({ reply });
+});
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
+try {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+} catch (error) {
+  console.error("Failed to start the server:", error);
+}

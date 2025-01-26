@@ -25,10 +25,30 @@ const IconicCities = () => {
   return (
     <section className="bg-white py-12">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-gray-800">
+        <h2
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: "500",
+            fontSize: "40px",
+            lineHeight: "48px",
+            letterSpacing: "normal",
+            color: "#222222",
+          }}
+          className="text-4xl font-bold "
+        >
           Leave On World Iconic City
         </h2>
-        <p className="text-gray-600 text-lg mt-2">
+        <p
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: "500",
+            fontSize: "20px",
+            lineHeight: "24px",
+            letterSpacing: "normal",
+            color: "#222222",
+          }}
+          className=" text-lg mt-2"
+        >
           Top Of Hospitality, Multicultural, Business City In The World
         </p>
       </div>
